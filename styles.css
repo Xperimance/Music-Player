@@ -1,0 +1,122 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.music-player {
+    text-align: center;
+    background-color: #0a0222;
+    border-radius: 25px;
+    padding: 20px;
+    width: 750px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.controls {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.progress-container {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 45px;
+    margin-left: 10px;
+    flex: 1;
+}
+
+.song-name {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.controls button {
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+    font-size: 24px;
+    line-height: 1;
+}
+
+.fa-play {
+    display: inline;
+}
+
+.fa-pause {
+    display: none;
+}
+
+.playing .fa-play {
+    display: none;
+}
+
+.playing .fa-pause {
+    display: inline;
+}
+
+.controls i {
+    font-size: 20px; 
+    margin: 0 5px; 
+}
+
+.controls button:hover {
+    background-color: #f2f2f2;
+    color: black;
+    transition: all 0.25s;
+}
+
+.controls button:focus {
+    outline: none;
+}
+
+audio {
+    width: 100%;
+    height: 40px;
+}
+
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-pause-button {
+    display: none;
+}
+
+audio::-webkit-media-controls-panel {
+    background-color: transparent;
+}
+
+audio::-webkit-media-controls-start-playback-button {
+    display: none;
+}
+
+
+audio::-webkit-media-slider-thumb {
+    background-color: transparent;
+    width: 12px;
+    height: 12px;
+    transition: width 0.2s ease;
+}
+
+
+audio::-webkit-media-volume-slider-thumb {
+    background-color: transparent;
+    width: 12px;
+    height: 12px;
+}

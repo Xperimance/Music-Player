@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="music-player">
+        <div class="controls">
+            <button id="previous-button">
+                <i class="fas fa-fast-backward" aria-hidden="true"></i>
+            </button>
+            <button id="play-pause-button">
+                <i class="fas fa-play" aria-hidden="true"></i>
+                <i class="fas fa-pause" aria-hidden="true"></i>
+            </button>
+            <button id="next-button">
+                <i class="fas fa-fast-forward" aria-hidden="true"></i>
+            </button>
+        </div>
+
+        <div class="progress-container">
+            <p class="song-name"></p>
+            <audio id="audio-player" controls>
+                <source src="music/Floating Abstract.mp3" type="audio/mp3">
+                <source src="music/For Future Bass.mp3" type="audio/mp3">
+                <source src="music/Good Night.mp3" type="audio/mp3">
+                <source src="music/Modern Vlog.mp3" type="audio/mp3">
+                <source src="music/Unlock Me.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
+
+<!--Music Credits-->
+<!--Music by <a href="https://pixabay.com/users/fassounds-3433550/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=160166">FASSounds</a> from <a href="https://pixabay.com/music//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=160166">Pixabay</a>-->
+<!--Music by <a href="https://pixabay.com/users/the_mountain-3616498/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=159125">Dmitrii Kolesnikov</a> from <a href="https://pixabay.com/music//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=159125">Pixabay</a>-->
+<!--Music by <a href="https://pixabay.com/users/prazkhanal-24653570/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=149058">Praz Khanal</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=149058">Pixabay</a>-->
+<!--Music by <a href="https://pixabay.com/users/penguinmusic-24940186/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=140795">Oleksandr Stepanov</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=140795">Pixabay</a>-->
+<!--Music by <a href="https://pixabay.com/users/comastudio-26079283/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=142819">ComaStudio</a> from <a href="https://pixabay.com/music//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=142819">Pixabay</a>-->
